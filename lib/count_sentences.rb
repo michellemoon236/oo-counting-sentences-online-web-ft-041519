@@ -15,8 +15,6 @@ class String
   end
 
   def count_sentences
-    self.split(/[.?!]/).reject do |i|
-      i.length < 2 
-    end.count
+    self.split(/[.?!]/).reject { |i| i.length < 2 }.count 
   end
 end
